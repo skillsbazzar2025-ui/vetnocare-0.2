@@ -1,1 +1,15 @@
-
+export default function Navbar() {
+  return (
+    <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1rem', backgroundColor: '#1e2a3a' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <img src="/logo.png" alt="Vetnocare" style={{ height: '40px', marginRight: '10px' }} />
+        <span style={{ color: 'white', fontWeight: 'bold', fontSize: '20px' }}>Vetnocare</span>
+      </div>
+      <div>
+        <a href="/" style={{ color: 'white', margin: '0 1rem', textDecoration: 'none' }}>Home</a>
+        <a href="/about" style={{ color: 'white', margin: '0 1rem', textDecoration: 'none' }}>About</a>
+        <a href="/contact" style={{ color: 'white', margin: '0 1rem', textDecoration: 'none' }}>Contact</a>
+      </div>
+    </nav>
+  );
+}
